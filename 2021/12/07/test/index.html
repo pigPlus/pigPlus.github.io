@@ -16,19 +16,19 @@
   <meta name="description" content="">
   <meta name="author" content="Liu Xuan">
   <meta name="keywords" content="">
-  <meta name="description" content="test">
+  <meta name="description" content="文字的居中text-align和line-height123&lt;div class&#x3D;&quot;text&quot;&gt;    垂直水平居中&lt;&#x2F;div&gt; 12345678.text &amp;#123;    width: 500px;    height: 250px;    background-color: red;    text-align: center;    &#x2F;* li">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试测试">
+<meta property="og:title" content="CSS实现垂直居中对齐的方式">
 <meta property="og:url" content="http://example.com/2021/12/07/test/index.html">
 <meta property="og:site_name" content="pigPlus的博客">
-<meta property="og:description" content="test">
+<meta property="og:description" content="文字的居中text-align和line-height123&lt;div class&#x3D;&quot;text&quot;&gt;    垂直水平居中&lt;&#x2F;div&gt; 12345678.text &amp;#123;    width: 500px;    height: 250px;    background-color: red;    text-align: center;    &#x2F;* li">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-12-07T06:51:17.000Z">
-<meta property="article:modified_time" content="2021-12-07T08:17:04.625Z">
+<meta property="article:modified_time" content="2021-12-07T13:09:04.831Z">
 <meta property="article:author" content="Liu Xuan">
 <meta name="twitter:card" content="summary_large_image">
   
-  <title>测试测试 - pigPlus的博客</title>
+  <title>CSS实现垂直居中对齐的方式 - pigPlus的博客</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -174,7 +174,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="测试测试">
+            <span class="h2" id="subtitle" title="CSS实现垂直居中对齐的方式">
               
             </span>
 
@@ -195,7 +195,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4 字
+      1.5k 字
     </span>
   
 
@@ -204,7 +204,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      5 分钟
     </span>
   
 
@@ -233,10 +233,19 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">测试测试</h1>
+            <h1 style="display: none">CSS实现垂直居中对齐的方式</h1>
             
             <div class="markdown-body">
-              <p>test</p>
+              <h1 id="文字的居中"><a href="#文字的居中" class="headerlink" title="文字的居中"></a>文字的居中</h1><h2 id="text-align和line-height"><a href="#text-align和line-height" class="headerlink" title="text-align和line-height"></a>text-align和line-height</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">&quot;text&quot;</span>&gt;<br>    垂直水平居中<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript">.text &#123;<br>    <span class="hljs-attr">width</span>: 500px;<br>    height: 250px;<br>    background-color: red;<br>    text-align: center;<br>    <span class="hljs-comment">/* line-height与height一致 */</span><br>    line-height: 250px; <br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="使用flex布局"><a href="#使用flex布局" class="headerlink" title="使用flex布局"></a>使用flex布局</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">&quot;big&quot;</span>&gt;<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs javascript">.big &#123;<br>    <span class="hljs-attr">width</span>: 600px;<br>    height: 300px;<br>    background-color: red;<br>    display: flex;<br>    justify-content: center;<br>    align-items: center;<br>&#125;<br>.small &#123;<br>    <span class="hljs-attr">width</span>: 300px;<br>    height: 150px;<br>    background-color: blue;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="text-align与vertical-align"><a href="#text-align与vertical-align" class="headerlink" title="text-align与vertical-align"></a>text-align与vertical-align</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">&quot;big&quot;</span>&gt;<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs javascript">.big &#123;<br>    <span class="hljs-attr">width</span>: 600px;<br>    height: 300px;<br>    background-color: red;<br>    text-align: center;<br>&#125;<br>.big:after &#123;<br>    <span class="hljs-attr">content</span>: <span class="hljs-string">&quot;&quot;</span>;<br>    display: inline-block;<br>    height: <span class="hljs-number">100</span>%;<br>    vertical-align: middle;<br>&#125;<br>.small &#123;<br>    <span class="hljs-attr">width</span>: 300px;<br>    height: 150px;<br>    background-color: blue;<br>    display: inline-block;<br>    vertical-align: middle;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="使用相对定位与绝对定位"><a href="#使用相对定位与绝对定位" class="headerlink" title="使用相对定位与绝对定位"></a>使用相对定位与绝对定位</h1><h2 id="偏移与平移"><a href="#偏移与平移" class="headerlink" title="偏移与平移"></a>偏移与平移</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">&quot;big&quot;</span>&gt;<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br>&lt;/div&gt;<br></code></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs javascript">.big &#123;<br>    <span class="hljs-attr">width</span>: 600px;<br>    height: 300px;<br>    background-color: red;<br>    position: relative;<br>&#125;<br>.small &#123;<br>    <span class="hljs-attr">width</span>: 300px;<br>    height: 150px;<br>    background-color: blue;<br>    position: absolute;<br>    top: <span class="hljs-number">50</span>%;<br>    left: <span class="hljs-number">50</span>%;<br>    transform: translate(-<span class="hljs-number">50</span>%,-<span class="hljs-number">50</span>%);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="margin-auto"><a href="#margin-auto" class="headerlink" title="margin:auto"></a>margin:auto</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs javascript">.big &#123;<br>    <span class="hljs-attr">width</span>: 600px;<br>    height: 300px;<br>    background-color: red;<br>    position: relative;<br>&#125;<br>.small &#123;<br>    <span class="hljs-attr">width</span>: 300px;<br>    height: 150px;<br>    background-color: blue;<br>    position: absolute;<br>    top: <span class="hljs-number">0</span>;<br>    left: <span class="hljs-number">0</span>;<br>    right: <span class="hljs-number">0</span>;<br>    bottom: <span class="hljs-number">0</span>;<br>    margin: auto;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 
             </div>
             <hr>
